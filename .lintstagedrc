@@ -1,0 +1,5 @@
+{
+	"./{src,scripts}/**/*.{ts,tsx}": "eslint --fix",
+	"*.{md,json,html,css}": "prettier --write",
+	"{.prettierrc.js,commitlint.config.js}": "prettier --write"
+}

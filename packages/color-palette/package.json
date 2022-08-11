@@ -1,0 +1,37 @@
+{
+  "name": "@frosted-bird/color-palette",
+  "version": "1.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "browser": "./dist/index.module.js",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "run-p build:*",
+    "build:esbuild": "tsm scripts/build.ts",
+    "build:types": "tsc --declaration --emitDeclarationOnly",
+    "typecheck": "tsc --noEmit",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "lint": "gts lint",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.15.1",
+    "gts": "^3.1.0",
+    "npm-run-all": "^4.1.5",
+    "tsm": "^2.2.2",
+    "typescript": "^4.7.4",
+    "vitest": "^0.21.1"
+  }
+}

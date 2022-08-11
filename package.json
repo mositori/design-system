@@ -1,0 +1,30 @@
+{
+	"name": "design-system",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"postinstall": "husky install",
+		"build": "turbo run build",
+		"lint": "gts lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "gts clean",
+    "fix": "gts fix"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"husky": "^8.0.1",
+		"turbo": "^1.4.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"gts": "^3.1.0",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"typescript": "^4.7.4"
+	},
+	"packageManager": "pnpm@7.8.0"
+}
