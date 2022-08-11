@@ -89,3 +89,16 @@ export const Violet = {
 	Violet800: '#5b21b6',
 	Violet900: '#4c1d95',
 } as const;
+
+/**
+ * 興奮と昂揚をアナタに。
+ */
+export const AnthV1 = {
+	Enma: '#b16b69',
+	Tsuki: '#a8d3ed',
+	Tsuki2: '#7d8fb1',
+	Iro: '#e3e68c',
+	Iro2: '#a3e0ad',
+	Chigi: '#bb84d5',
+	Chigi2: '#e28fd1',
+} as const;
